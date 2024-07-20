@@ -42,14 +42,3 @@ class User:
 
     def __str__(self):
         return f"User(username={self.username}, email={self.email})"
-
-if __name__ == "__main__":
-    try:
-        user1 = User("john_doe", "john.doe@example.com", "password123")
-        print(user1)
-        user1.username = "jane_doe"
-        user1.email = "jane.doe@example.com"
-        user1.password = "newpassword"
-        print(user1)
-    except Exception as e:
-        print(e)
